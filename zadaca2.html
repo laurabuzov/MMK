@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Moj Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2; /* svijetlo ružičasta pozadina */
+            color: #660066; /* tamno ljubičasti tekst */
+            margin: 40px;
+        }
+
+        header, footer {
+            text-align: center;
+            background-color: #ff99cc; /* ružičasta */
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: #fff0fa; /* svijetlo ljubičasta nijansa */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Popisi */
+        ul {
+            list-style: square;
+            color: #cc0099;
+        }
+
+        ol {
+            list-style: upper-roman;
+            color: #993399;
+        }
+
+        ul li:first-child {
+            font-weight: bold;
+        }
+
+        ol li:last-child {
+            color: #ff3399;
+        }
+
+        /* Tipografija */
+        strong { color: #990099; }
+        em { color: #cc33cc; }
+        span.highlight {
+            background-color: #ffccff;
+            padding: 2px 4px;
+        }
+
+        /* Layout */
+        .sidebar {
+            float: right;
+            width: 30%;
+            background-color: #ffb3e6;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .content {
+            display: inline-block;
+            width: 65%;
+            vertical-align: top;
+        }
+
+        footer { text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moj Portfolio</h1>
+        <p><em>Web dizajn & kreativni projekti</em></p>
+    </header>
+
+    <main>
+        <div class="content">
+            <p>Pozdrav! Ja sam <strong>Laura Buzov</strong> i volim <em>zanimljive web dizajne :)</em>.</p>
+            <p>U slobodno vrijeme <span class="highlight"> crtam, slikam </span> ili gledam svoje omiljene filmove.</p>
+
+            <h3>Vještine</h3>
+            <ul>
+                <li>HTML i CSS</li>
+                <li>Osnove dizajna</li>
+                <li>Tipografija</li>
+            </ul>
+
+            <h3>Projekti</h3>
+            <ol>
+                <li>Osobni portfolio</li>
+                <li>Mini blog</li>
+                <li>Galerija fotografija</li>
+            </ol>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Kontakt</h3>
+            <p><strong>Email:</strong> lbuzov@grf.hr</p>
+        </aside>
+
+        <div style="clear: both;"></div>
+    </main>
+
+    <footer>
+        &copy; 2025 Laura Buzov | Portfolio 🌸
+    </footer>
+</body>
+</html>
