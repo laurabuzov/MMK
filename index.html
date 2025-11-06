@@ -73,12 +73,50 @@
     </aside>
 
     <div style="clear: both;"></div>
+<!-- NOVI DIO: Kontakt forma -->
+<section id="kontakt">
+    <h2>Kontakt forma</h2>
+
+    <form id="contactForm" name="contactForm">
+        <fieldset>
+            <legend>Pošaljite mi poruku</legend>
+
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime i prezime" required>
+
+            <label for="email">E-mail adresa:</label>
+            <input type="email" id="email" name="email" placeholder="primjer@email.com" required>
+
+            <label for="tema">Tema poruke:</label>
+            <input list="teme" id="tema" name="tema" placeholder="Odaberite ili upišite temu">
+            <datalist id="teme">
+                <option value="Pohvala">
+                <option value="Pitanje">
+                <option value="Suradnja">
+                <option value="Ostalo">
+            </datalist>
+
+            <label for="boja">Omiljena boja:</label>
+            <select id="boja" name="boja">
+                <option value="nema">-- Odaberite boju --</option>
+                <option value="plava">Plava</option>
+                <option value="narančasta">Narančasta</option>
+                <option value="roza">Roza</option>
+                <option value="zelena">Zelena</option>
+            </select>
+
+            <button type="submit" value="Pošalji">Pošalji</button>
+        </fieldset>
+    </form>
+</section>
 
     <footer>
         &copy; 2025 Laura Buzov | Moja web stranica
     </footer>
+	
 </body>
 </html>
 
 	
+
 
