@@ -36,8 +36,67 @@
             margin-top: 15px;
             border-left: 4px solid #2a7ae2;
         }
+		/* --- DODANO: Tablica --- */
+        #raspored {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #raspored h2 {
+            color: #ff6f00; 
+            background-color: #fff0ff; 
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto 50px auto;
+            border-collapse: collapse;
+            border: 3px solid #ff6f00;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(255, 111, 0, 0.3);
+        }
+
+        thead {
+            background-color: #ff6f00;
+            color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ffa64d;
+            padding: 12px 16px;
+            text-align: center;
+        }
+
+        tbody tr.highlight td {
+            background-color: #ffe6ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fff7e6; 
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        #posebna-celija {
+            background-color: #ffd966;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+
+        tbody tr:hover {
+            background-color: #ffe6f2;
+            transition: background-color 0.3s ease;
+        }
     </style>
-	</head>
+</head>
+	
 <body>
     <h1>Dobrodošli na moju web stranicu!</h1>
 	
@@ -108,62 +167,55 @@
         </fieldset>
     </form>
 </section>
-	
+<!-- NOVI DIO: Tablični sadržaj -->
 <section id="raspored">
-    <h2>Raspored mojih aktivnosti</h2>
+        <h2>Raspored mojih aktivnosti</h2>
 
-    <table>
-    <thead>
-        <tr>
-        	<th rowspan="2">Dan</th>
-            <th colspan="2">Aktivnosti</th>
-            <th rowspan="2">Napomena</th>
-        </tr>
-		
-        <tr>
-            <th>Vrsta</th>
-            <th>Vrijeme</th>
-        </tr>
-        </thead>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Dan</th>
+                    <th colspan="2">Aktivnosti</th>
+                    <th rowspan="2">Napomena</th>
+                </tr>
+                <tr>
+                    <th>Vrsta</th>
+                    <th>Vrijeme</th>
+                </tr>
+            </thead>
 
-        <tbody>
-        <tr>
-        	<td>Ponedjeljak</td>
-            <td>Vježba HTML-a</td>
-            <td>09:00 – 10:30</td>
-            <td>Uređivanje strukture</td>
-        </tr>
-			
-    	<tr class="highlight">
-            <td>Utorak</td>
-            <td>CSS stiliziranje</td>
-            <td>11:00 – 12:30</td>
-            <td>Dodavanje boja i rubova</td>
-        </tr>
-			
-        <tr>
-        	<td>Srijeda</td>
-            <td id="posebna-celija">Tablice i forme</td>
-            <td>13:00 – 14:30</td>
-            <td>Spajanje znanja</td>
-        </tr>
-			
-        <tr>
-        	<td>Četvrtak</td>
-            <td>Multimedijski elementi</td>
-            <td>09:00 – 10:30</td>
-            <td>Slike i video</td>
-        </tr>
-			
-        <tr>
-            <td>Petak</td>
-            <td colspan="2">Slobodno</td>
-            <td>Priprema za vikend 😊</td>
-        </tr>
-			
-    </tbody>
-    </table>
-	
+            <tbody>
+                <tr>
+                    <td>Ponedjeljak</td>
+                    <td>Vježba HTML-a</td>
+                    <td>09:00 – 10:30</td>
+                    <td>Uređivanje strukture</td>
+                </tr>
+                <tr class="highlight">
+                    <td>Utorak</td>
+                    <td>CSS stiliziranje</td>
+                    <td>11:00 – 12:30</td>
+                    <td>Dodavanje boja i rubova</td>
+                </tr>
+                <tr>
+                    <td>Srijeda</td>
+                    <td id="posebna-celija">Tablice i forme</td>
+                    <td>13:00 – 14:30</td>
+                    <td>Spajanje znanja</td>
+                </tr>
+                <tr>
+                    <td>Četvrtak</td>
+                    <td>Multimedijski elementi</td>
+                    <td>09:00 – 10:30</td>
+                    <td>Slike i video</td>
+                </tr>
+                <tr>
+                    <td>Petak</td>
+                    <td colspan="2">Slobodno</td>
+                    <td>Priprema za vikend 😊</td>
+                </tr>
+            </tbody>
+        </table>
 </section>
 	
     <footer>
@@ -172,3 +224,4 @@
 	
 </body>
 </html>
+
