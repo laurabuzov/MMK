@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja web stranica</title>
 
-    <!-- Povezivanje s vanjskim fontom (Google Fonts) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Unutarnji CSS stilovi -->
+    <!-- CSS -->
     <style>
-        /* CSS selektori po nazivu oznake */
-
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #fba8fb; /* svijetla pozadina */
-            color: #000000; /* osnovna boja teksta */
+            background-color: #fba8fb;
+            color: #000000;
             margin: 40px;
         }
 
         h1 {
             font-weight: 600;
-            font-style: normal;
-            color: #ff6f00; /* narančasta boja naslova */
-            background-color: #e0ecff; /* lagana pozadina iza naslova */
+            color: #ff6f00;
+            background-color: #e0ecff;
             padding: 10px;
             border-radius: 5px;
         }
@@ -36,15 +33,16 @@
             margin-top: 15px;
             border-left: 4px solid #2a7ae2;
         }
-		/* --- DODANO: Tablica --- */
+
+        /* --- Tablica --- */
         #raspored {
             text-align: center;
             margin-top: 40px;
         }
 
         #raspored h2 {
-            color: #ff6f00; 
-            background-color: #fff0ff; 
+            color: #ff6f00;
+            background-color: #fff0ff;
             padding: 10px;
             border-radius: 8px;
             display: inline-block;
@@ -77,7 +75,7 @@
         }
 
         tbody tr:nth-child(even) {
-            background-color: #fff7e6; 
+            background-color: #fff7e6;
         }
 
         tbody tr:nth-child(odd) {
@@ -96,14 +94,11 @@
         }
     </style>
 </head>
-	
+
 <body>
     <h1>Dobrodošli na moju web stranicu!</h1>
-	
-	<p>Ovo je prvi paragraf moje vježbe.</p>
-	
-</body>
- <!-- Novi dio zadatka -->
+    <p>Ovo je prvi paragraf moje vježbe.</p>
+
     <div class="content">
         <h2>Moj portfolio i vježbe</h2>
         <p>Ovdje pokazujem kako koristim <strong>HTML</strong> i <em>CSS</em> u svojim projektima.  
@@ -132,43 +127,45 @@
     </aside>
 
     <div style="clear: both;"></div>
-<!-- NOVI DIO: Kontakt forma -->
-<section id="kontakt">
-    <h2>Kontakt forma</h2>
 
-    <form id="contactForm" name="contactForm">
-        <fieldset>
-            <legend>Pošaljite mi poruku</legend>
+    <!-- Kontakt forma -->
+    <section id="kontakt">
+        <h2>Kontakt forma</h2>
 
-            <label for="ime">Ime i prezime:</label>
-            <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime i prezime" required>
+        <form id="contactForm" name="contactForm">
+            <fieldset>
+                <legend>Pošaljite mi poruku</legend>
 
-            <label for="tema">Tema poruke:</label>
-            <input list="teme" id="tema" name="tema" placeholder="Odaberite ili upišite temu">
-            <datalist id="teme">
-                <option value="Pohvala">
-                <option value="Pitanje">
-                <option value="Ostalo">
-            </datalist>
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime i prezime" required>
 
-            <label for="boja">Omiljena boja:</label>
-            <select id="boja" name="boja">
-                <option value="nema">-- Odaberite boju --</option>
-                <option value="plava">Plava</option>
-                <option value="narančasta">Narančasta</option>
-                <option value="roza">Roza</option>
-                <option value="zelena">Zelena</option>
-				<option value="crvena">Crvena</option>
-				<option value="žuta">Žuta</option>
-				<option value="ljubičasta">Ljubičasta</option>
-            </select>
+                <label for="tema">Tema poruke:</label>
+                <input list="teme" id="tema" name="tema" placeholder="Odaberite ili upišite temu">
+                <datalist id="teme">
+                    <option value="Pohvala">
+                    <option value="Pitanje">
+                    <option value="Ostalo">
+                </datalist>
 
-            <button type="submit" value="Pošalji">Pošalji</button>
-        </fieldset>
-    </form>
-</section>
-<!-- NOVI DIO: Tablični sadržaj -->
-<section id="raspored">
+                <label for="boja">Omiljena boja:</label>
+                <select id="boja" name="boja">
+                    <option value="nema">-- Odaberite boju --</option>
+                    <option value="plava">Plava</option>
+                    <option value="narančasta">Narančasta</option>
+                    <option value="roza">Roza</option>
+                    <option value="zelena">Zelena</option>
+                    <option value="crvena">Crvena</option>
+                    <option value="žuta">Žuta</option>
+                    <option value="ljubičasta">Ljubićasta</option>
+                </select>
+
+                <button type="submit" value="Pošalji">Pošalji</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- TABLICA -->
+    <section id="raspored">
         <h2>Raspored mojih aktivnosti</h2>
 
         <table>
@@ -216,12 +213,10 @@
                 </tr>
             </tbody>
         </table>
-</section>
-	
+    </section>
+
     <footer>
         &copy; 2025 Laura Buzov | Moja web stranica
     </footer>
-	
 </body>
 </html>
-
