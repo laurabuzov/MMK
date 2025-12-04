@@ -146,6 +146,57 @@
             border-radius: 8px;
         }
 
+        #mediji {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff0f8;
+            border-radius: 10px;
+        }
+
+        #mediji img,
+        #mediji picture img,
+        #mediji iframe,
+        #mediji object {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+                @media (min-width: 900px) {
+        .content {
+            width: 65%;
+            float: left;
+            margin-right: 5%;
+        }
+
+        .sidebar {
+            width: 30%;
+            float: left;
+        }
+    }
+
+                @media (max-width: 600px) {
+        body {
+            margin: 15px;
+        }
+
+        .content, 
+        .sidebar {
+            width: 100%;
+            float: none;
+            margin: 0;
+        }
+
+        #raspored table {
+            width: 100%;
+        }
+
+        section#kontakt input,
+        section#kontakt select,
+        section#kontakt button {
+            width: 100%;
+        }
+    }
     </style>
 </head>
 
@@ -154,7 +205,7 @@
     <p>Ovo je prvi paragraf moje vježbe.</p>
 
     <div class="content">
-        <h2>Moj portfolio i vježbe</h2>
+        <h2>Vježba</h2>
         <p>Ovdje pokazujem kako koristim <strong>HTML</strong> i <em>CSS</em> u svojim projektima.  
         Naučila sam kako dodati <span class="highlight">popise</span>, tipografske efekte i jednostavan raspored elemenata.</p>
 
@@ -267,6 +318,37 @@
         </table>
     </section>
 
+    <section id="mediji">
+        <h2>Medijski sadržaji</h2>
+
+        <p>
+            Posjeti moj omiljeni web resurs:
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+        </p>
+
+        <img src="https://via.placeholder.com/600x300" alt="Primjer slike" class="medijska-slika">
+
+        <picture>
+            <source srcset="https://via.placeholder.com/900x400" media="(min-width: 700px)">
+            <img src="https://via.placeholder.com/500x250" alt="Responsive picture primjer">
+        </picture>
+
+        <iframe 
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            allowfullscreen>
+        </iframe>
+
+        <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                type="application/pdf"
+                width="100%"
+                height="300">
+            <p>Vaš preglednik ne može prikazati PDF. 
+               <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Preuzmite PDF</a>.</p>
+        </object>
+    </section>
+    
     <footer>
         &copy; 2025 Laura Buzov | Moja web stranica
     </footer>
