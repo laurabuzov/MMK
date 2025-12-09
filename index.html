@@ -347,6 +347,42 @@
             <p>Vaš preglednik ne može prikazati PDF. 
                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Preuzmite PDF</a>.</p>
         </object>
+        
+        <h3>Video zapis (HTML5 video)</h3>
+        
+        <video width="100%" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Vaš preglednik ne podržava HTML5 video tag.
+        </video>
+
+        <h3>Audio zapis</h3>
+        
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Vaš preglednik ne podržava audio element.
+        </audio>
+
+        <h3>Ugrađeni sadržaj (embed)</h3>
+        <embed 
+            src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" 
+            width="100%" 
+            height="300" 
+            type="image/jpeg">
+
+        <h3>Interaktivna slika (image map)</h3>
+            <img src="https://via.placeholder.com/600x300" usemap="#mojaMapa" alt="Interaktivna mapa">
+
+        <map name="mojaMapa">
+            <area shape="rect" coords="0,0,300,300" href="https://www.google.com" target="_blank">
+            <area shape="rect" coords="300,0,600,300" href="https://www.youtube.com" target="_blank">
+        </map>
+
+        <h3>Interaktivni gumbi</h3>
+            <button onclick="alert('Kliknuo/la si gumb!')">Klikni me</button>
+
+        <a href="#kontakt">
+            <button style="margin-top:10px;">Idi na kontakt formu</button>
+        </a>
     </section>
     
     <footer>
