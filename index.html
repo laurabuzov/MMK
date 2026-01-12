@@ -162,41 +162,42 @@
             border-radius: 8px;
         }
 
-                @media (min-width: 900px) {
-        .content {
-            width: 65%;
-            float: left;
-            margin-right: 5%;
-        }
-
-        .sidebar {
-            width: 30%;
-            float: left;
-        }
-    }
-
-                @media (max-width: 600px) {
-        body {
-            margin: 15px;
-        }
-
-        .content, 
-        .sidebar {
-            width: 100%;
-            float: none;
-            margin: 0;
-        }
-
-        #raspored table {
-            width: 100%;
-        }
-
-        section#kontakt input,
-        section#kontakt select,
-        section#kontakt button {
-            width: 100%;
-        }
+        @media (min-width: 900px) {
+            .content {
+                width: 65%;
+                float: left;
+                margin-right: 5%;
             }
+
+            .sidebar {
+                width: 30%;
+                float: left;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 15px;
+            }
+
+            .content, 
+            .sidebar {
+                width: 100%;
+                float: none;
+                margin: 0;
+            }
+
+            #raspored table {
+                width: 100%;
+            }
+
+            section#kontakt input,
+            section#kontakt select,
+            section#kontakt button {
+                width: 100%;
+            }
+        }
+
         button {
             background-color: #ff66b2;
             color: white;
@@ -214,6 +215,7 @@
         button:active {
             transform: scale(0.95);
         }
+
         section#kontakt input:focus,
         section#kontakt select:focus {
             outline: none;
@@ -221,6 +223,7 @@
             background-color: #ffe6f2;
             transition: background-color 0.3s ease, border 0.3s ease;
         }
+
         #mediji img,
         #mediji picture img {
             transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -233,64 +236,41 @@
         }
 
         h1 {
-            animation-name: naslov-ulaz;
-            animation-duration: 1.2s;
-            animation-timing-function: ease-out;
-        }
-        
-        @keyframes naslov-ulaz {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            animation: naslov-ulaz 1.2s ease-out;
         }
 
         h1 + p {
-                animation: paragraf-ulaz 1s ease-in;
-            }
-        
-        @keyframes paragraf-ulaz {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            animation: paragraf-ulaz 1s ease-in;
         }
 
         section#kontakt > h2 {
-                animation: kontakt-naslov 1s ease-in-out;
-            }
-            
-            @keyframes kontakt-naslov {
-                from {
-                    opacity: 0;
-                    transform: scale(0.95);
-                }
-                to {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-
-            #raspored table tbody tr:nth-child(even) {
-                    animation: redak-fade 0.8s ease-in;
-                }
-                
-                @keyframes redak-fade {
-                    from {
-                        opacity: 0;
-                    }
-                    to {
-                        opacity: 1;
-                    }
+            animation: kontakt-ulaz 1s ease-in-out;
         }
+
+        #raspored table tbody tr:nth-child(even) {
+            animation: redak-ulaz 0.8s ease-in;
+        }
+
+        @keyframes naslov-ulaz {
+            from { opacity: 0; transform: translateY(-30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes paragraf-ulaz {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes kontakt-ulaz {
+            from { opacity: 0; transform: scale(0.95); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes redak-ulaz {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
     </style>
 </head>
 
@@ -485,4 +465,3 @@
     
 </body>
 </html>
-
