@@ -231,7 +231,66 @@
             transform: scale(1.03);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
-   
+
+        h1 {
+            animation-name: naslov-ulaz;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-out;
+        }
+        
+        @keyframes naslov-ulaz {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 + p {
+                animation: paragraf-ulaz 1s ease-in;
+            }
+        
+        @keyframes paragraf-ulaz {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section#kontakt > h2 {
+                animation: kontakt-naslov 1s ease-in-out;
+            }
+            
+            @keyframes kontakt-naslov {
+                from {
+                    opacity: 0;
+                    transform: scale(0.95);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            #raspored table tbody tr:nth-child(even) {
+                    animation: redak-fade 0.8s ease-in;
+                }
+                
+                @keyframes redak-fade {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+        }
     </style>
 </head>
 
@@ -426,5 +485,4 @@
     
 </body>
 </html>
-
 
