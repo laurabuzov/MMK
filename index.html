@@ -24,6 +24,19 @@
             border-radius: 5px;
             text-align: center;
         }
+            animation-name: naslov-ulaz, naslov-trecadimenzija;
+            animation-duration: 1.2s, 4s;
+            animation-delay: 0s, 1.5s;
+            animation-iteration-count: 1, infinite;
+            animation-direction: normal, alternate;
+            animation-timing-function: ease-out, ease-in-out;
+        }
+
+        @keyframes naslov-trecadimenzija {
+            0% { transform: rotateY(0deg) scale(1); }
+            50% { transform: rotateY(10deg) scale(1.05); }
+            100% { transform: rotateY(0deg) scale(1); }
+        }
 
         h2, h3 {
             margin-top: 20px;
@@ -36,6 +49,37 @@
             padding: 10px;
             margin-top: 15px;
             border-left: 4px solid #2a7ae2;
+        }
+
+        #mediji {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff0f8;
+            border-radius: 10px;
+            perspective: 800px; 
+        }
+
+        #mediji img,
+        #mediji picture img,
+        #mediji iframe,
+        #mediji object {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.8s ease, box-shadow 0.4s ease;
+            transform-style: preserve-3d;
+            backface-visibility: hidden; 
+        }
+
+        #mediji img:hover {
+            transform: rotateY(20deg) translateZ(20px) scale(1.05);
+            animation: rotacija3D 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes rotacija3D {
+            0% { transform: rotateY(0deg) translateZ(0); }
+            50% { transform: rotateY(25deg) translateZ(30px) scale(1.05); }
+            100% { transform: rotateY(0deg) translateZ(0); }
         }
 
         .content {
